@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+  <script src="index.js"> </script>
+  <div class="header">
+    <h1>Find Your Next Stay</h1>
+    <div class="container">
+     
+      <button class="tablink" onclick="openPage('Flight', this, 'white')">Flights</button>
+      <button class="tablink" onclick="openPage('Car', this, 'green')" id="defaultOpen">Hostels</button>
+      <button class="tablink" onclick="openPage('Hotel', this, 'blue')">Trains</button>
+      <button class="tablink" onclick="openPage('Train', this, 'orange')">Car</button>
+     
+      <div id="Flight" class="tabcontent">
+
+        <h3>my name is mritytunjay</h3>
+        <div class="booking-form">
+
+
+          <div class="search-bar">
+            <form>
+              <div class="location-input">
+                <label>Location</label>
+                <input type="text" placeholder="Where are you going">
+              </div>
+              <div>
+                <label>Check In </label>
+                <input type="date" placeholder="Add Date">
+              </div>
+              <div>
+                <label>Cheak Out</label>
+                <input type="date" placeholder="Where are you going">
+              </div>
+              <div>
+                <label>Guest</label>
+                <input type="text" placeholder="Add Guest">
+                
+              </div>
+              <button type="submit"><img src="/image/search-50.png"></button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="Car" class="tabcontent">
+        <h3>News</h3>
+        <p>Some news this fine day!</p>
+      </div>
+
+      <div id="Hotel" class="tabcontent">
+        <h3>Contact</h3>
+        <p>Get in touch, or swing by for a cup of coffee.</p>
+      </div>
+
+      <div id="Train" class="tabcontent">
+        <h3>About</h3>
+        <p>Who we are and what we do.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

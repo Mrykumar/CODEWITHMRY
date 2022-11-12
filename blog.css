@@ -1,0 +1,99 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+ background-image: url("/image/nanital.jpg ");
+ background-size: cover;
+ background-position: center;
+}
+.header h1{
+  font-size: 4vw;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-top: 15%;
+}
+.container{
+  padding: 0 7%;
+    position: relative;
+   padding-top: 40px;
+    margin-bottom: 50px;
+    margin-left: 200px;
+   margin-right:230px;
+   border-radius: 50px;
+   
+}
+
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-bar form input{
+    display: block;
+    border: 0;
+    outline: non;
+    background: transparent;
+  }
+  .search-bar form button{
+    background: rgb(225, 84, 19);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    left: -373px;
+    bottom: -122px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  }
+  .search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+
+  }
+  .location-input{
+    flex: 1;
+
+}
+.search-bar form label{
+  font-weight: 600;
+}
+/* Style tab links */
+.tablink {
+  background-color:white;
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color:white;
+  color: rgb(0, 183, 255);
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color:black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#Flight {background-color: white;}
+#Car {background-color: green;}
+#Hotel {background-color: blue;}
+#Train {background-color: orange;}

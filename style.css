@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.header{
+      min-height: 100vh;
+      width: 100%;
+     background-image: url("/image/nanital.jpg ");
+     background-size: cover;
+     background-position: center;
+    
+}
+nev{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+    font-size:100 ;
+}
+
+
+.logo{
+    width: 244px;
+    cursor: pointer;
+    position: relative;
+    right: 70px;
+}
+.nev-link li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+
+}
+.nev-link li a{
+    text-decoration: none;
+    color: white;
+}
+.nev-link li a:hover {
+  background-color:red;
+}
+
+.register{
+    background: white;
+    color: blue;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+}
+.register:hover{
+  background: red;
+}
+.container{
+    padding: 0 7%;
+}
+.header h1{
+    font-size: 4vw;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 15%;
+}
+.search-bar{
+    background: white;
+    width: 70%;
+    margin: 30px auto;
+    padding: 6px 25px 6px 30px;
+    border-radius: 50px;
+
+}  
+.search-bar form{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-bar form input{
+    display: block;
+    border: 0;
+    outline: non;
+    background: transparent;
+  }
+  .search-bar form button{
+    background: rgb(225, 84, 19);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    left: 12px;
+  }
+  .search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+
+  }
+  .location-input{
+    flex: 1;
+
+}
+.search-bar form label{
+  font-weight: 600;
+}
+/* -----------exclusives------------------- */
+
+.sub-title{
+  margin: 50px 0 20px;
+  font-size: 2.2vw;
+  font-weight: 700;
+  color:#333 ;
+  text-align: center;
+  text-shadow:5px 8px 15px  #888888;
+}
+
+
+.exclusives{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-gap: 40px;
+  
+}
+  
+.exclusives div img{ 
+  width:100%;
+  height: 80%;
+  border-radius: 10px;
+  transition: width 1s, height 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+} 
+.exclusives div:hover{
+  transform: scale(1.3);
+  z-index: 2;
+  
+}
+
+.exclusives div{
+  position: relative;
+}
+.exclusives div span{
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+/* ---------------TRADING PLACE--------- */
+.trading{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+.trading div img{
+  width: 100%;
+  height:100%;
+  border-radius: 10px;
+  transition: width 1s, height 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.trading div:hover{
+  transform: scale(1.3);
+  z-index: 2;
+  
+}
+
+.trading h3{
+  font-weight: 600;
+  margin-top: 10px;
+}
+/* ------------call to action------- */
+.cta{
+  margin: 80px 0;
+  background-image: linear-gradient(to right, #3f2321,transparent),url(/image/luxury-living-room-tables.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding: 5%;
+  color: #fff;
+}
+.cta h3{
+  font-size: 4vw;
+  line-height:5.3vw ;
+  font-weight: 500;
+}
+.cta p{
+  font-size: 18px;
+  margin: 10px 0;
+}
+.cta-btn{
+  background:#ff5361;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 8px;
+  margin-top: 20px;
+  display: inline-block;
+
+}
+/* -------------travellers stories---------- */
+.stories{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+.stories div img{
+  width: 100%;
+  height:100%;
+  border-radius: 10px;
+}
+.stories div{
+  position: relative;
+  text-align: center;
+}
+.stories p{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-size: 26px;
+}
